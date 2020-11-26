@@ -1,13 +1,10 @@
-package bluej;
-
-import vetement_prix.Prix;
+package main;
 
 /**
  */
 public class Vetement {
     private String type = "Inconnu";
     private String couleur = "Inconnu";
-    //private Prix prix = null;
     private Armoire armoire = null;
 
     /**
@@ -55,21 +52,5 @@ public class Vetement {
     	}
         
     }
-    
-    /*public void setPrix(Prix prix) {
-        this.prix = prix;
-    }*/
 
-    /**
-     * Vérifier les attributs du vetement et lui ajoute un prix
-     * 
-     * @param type le type
-     * @param couleur la couleur
-     * @param prix une instance de la classe Prix
-     * return true si le vetement a le même type et la même couleur, false sinon
-     */
-    /*public boolean verifierVetement(String type, String couleur, Prix prix) {
-        this.setPrix(prix);
-        return this.type == type && this.couleur == couleur;
-    }*/
 }
