@@ -51,6 +51,18 @@ public class VetementEtArmoireTest {
     }
     
     @Test
+    public void testChangeCouleurNull() {
+        vetement1.setCouleur(null);
+        assertEquals("bleu", vetement1.getCouleur());
+    }
+
+    @Test
+    public void testChangeTypeNull() {
+        vetement1.setType(null);
+        assertEquals("pull", vetement1.getType());
+    }
+    
+    @Test
     public void testAddVetement() {
         armoire1.addVetement(vetement1);
         assertTrue(armoire1.hasVetement(vetement1));

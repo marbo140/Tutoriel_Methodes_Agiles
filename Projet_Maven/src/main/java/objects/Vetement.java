@@ -20,7 +20,9 @@ public class Vetement {
     }
     
     public void setType(String type) {
-        this.type = type;
+    	if (type != null) {
+    		this.type = type;
+    	}
     }
     
     public String getCouleur() {
@@ -28,7 +30,9 @@ public class Vetement {
     }
     
     public void setCouleur(String couleur) {
-        this.couleur = couleur;
+    	if (couleur != null) {
+    		this.couleur = couleur;
+    	}
     }
     
     public Armoire getArmoire() {

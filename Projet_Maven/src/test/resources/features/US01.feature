@@ -9,10 +9,12 @@ Feature: US01 Concevoir un vetement
 
   Scenario Outline: Transformer un vetement
     Given j'ai cree un vetement de type "pull" et de couleur "bleu"
-    When je transforme son/sa "<caracteristique>" pour "<valeur>"
-    Then le vetement a bien pour "<caracteristique>" "<valeur>"
+    When je transforme son/sa "<caracteristique>" pour "<valeur1>"
+    Then le vetement a bien pour "<caracteristique>" "<valeur2>"
 
     Examples: 
-      | caracteristique  | valeur |
-      | couleur 				 | vert   |
-      | type             | veste  |
+      | caracteristique  | valeur1 | valeur2 |
+      | couleur 				 | vert    | vert    |
+      | type             | veste   | veste   |
+      | couleur 				 | null    | bleu    |
+      | type             | null    | pull    |
